@@ -1,0 +1,5 @@
+# Those translations will get imported as theme.identifier....
+foo:
+  bar:
+    baz: Something # theme.comms.test.foo.bar.baz
+    foo: "Something else" # theme.comms.test.foo.bar.foo

@@ -1,0 +1,25 @@
+<header>
+    Another Custom header and menu. Configurable logo and number of menus + core logic fo fetching categories, offers and
+    packets into the menu.
+</header>
+<aside>
+    Print sections from the pagebuilder.
+
+    <pagebuilder-renderer position="header"></pagebuilder-renderer>
+
+</aside>
+<main>
+
+    Print sections from the pagebuilder.
+
+    <component v-for="action in $store.getters.groupedRootElements.content"
+               :action-id="action.id"
+               :is="'pckg-' + action.type"
+               :key="action.id"></component>
+
+    ##PAGE##
+
+</main>
+<footer>
+    Build your custom footer
+</footer>

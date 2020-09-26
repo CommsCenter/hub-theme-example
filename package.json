@@ -1,0 +1,16 @@
+{
+  "name": "themecommstest",
+  "version": "1.0.0",
+  "repository": "",
+  "license": "",
+  "private": true,
+  "browserslist": [
+    "last 3 versions",
+    "> 1%",
+    "IE 11"
+  ],
+  "dependencies": {
+    "is-boolean": "^0.0.2"
+  },
+  "scripts": {}
+}

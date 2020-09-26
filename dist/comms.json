@@ -1,0 +1,38 @@
+{
+  "theme": {
+    "identifier": "comms/test",
+    "name": "Test",
+    "version": "0.0.1a"
+  },
+  "author": {
+    "name": "Bojan",
+    "email": "bojan@comms.dev",
+    "web": "https://comms.dev"
+  },
+  "pages": {
+    "homepage": {
+      "template": "homepage.html",
+      "layout": "for-homepage.html"
+    },
+    "custom": {
+      "template": "custom.html",
+      "layout": "custom.html"
+    }
+  },
+  "layouts": {
+    "for-homepage": {
+      "template": "for-homepage.html"
+    },
+    "custom": {
+      "template": "custom.html"
+    }
+  },
+  "assets": {
+    "vue": [
+      "build/theme.js"
+    ]
+  },
+  "scripts": {
+  },
+  "components": {}
+}
