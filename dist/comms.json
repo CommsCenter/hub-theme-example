@@ -1,38 +1,103 @@
 {
-  "theme": {
+  "share": {
+    "type": "theme",
     "identifier": "comms/test",
     "name": "Test",
     "version": "0.0.1a"
   },
-  "author": {
+  "vendor": {
     "name": "Bojan",
     "email": "bojan@comms.dev",
     "web": "https://comms.dev"
   },
-  "pages": {
-    "homepage": {
-      "template": "homepage.html",
-      "layout": "for-homepage.html"
-    },
-    "custom": {
-      "template": "custom.html",
-      "layout": "custom.html"
-    }
-  },
-  "layouts": {
-    "for-homepage": {
-      "template": "for-homepage.html"
-    },
-    "custom": {
-      "template": "custom.html"
-    }
-  },
-  "assets": {
-    "vue": [
+  "configuration": {
+    "assets": [
       "build/theme.js"
     ]
   },
-  "scripts": {
+  "require": {
+    "items": [
+      "vendor-foo"
+    ],
+    "lists": [
+      "vendor-bar"
+    ],
+    "components": [
+      "vendor-baz"
+    ],
+    "pages": [
+      "vendor-share"
+    ],
+    "layouts": [
+      "vendor-name"
+    ]
   },
-  "components": {}
+  "theme": {
+    "pages": {
+      "homepage": {
+        "name": "Default homepage",
+        "component": "hub-page-comms-homepage",
+        "layout": "default",
+        "settings": {},
+        "capabilities": []
+      },
+      "custom": {
+        "name": "Custom page",
+        "component": "foo",
+        "layout": "hub-layout-comms-bar",
+        "settings": {},
+        "capabilities": [
+          "resolve:packet"
+        ]
+      },
+      "landing": {
+        "name": "Custom page",
+        "component": "foo",
+        "layout": "hub-layout-comms-bar",
+        "settings": {},
+        "capabilities": [
+          "resolve:packet"
+        ]
+      }
+    },
+    "layouts": {
+      "for-homepage": {
+        "name": "For homepage",
+        "component": "for-homepage",
+        "settings": {},
+        "slots": {
+          "sidebar": "Sidebar"
+        }
+      },
+      "custom": {
+        "name": "Custom landing",
+        "component": "custom",
+        "settings": {},
+        "slots": {
+          "sidebar": "Sidebar"
+        }
+      }
+    },
+    "lists": {
+      "custom": {
+        "name": "Custom landing",
+        "component": "custom",
+        "settings": {}
+      }
+    },
+    "items": {
+      "custom": {
+        "name": "Custom landing",
+        "component": "custom",
+        "settings": {}
+      }
+    },
+    "components": {
+      "custom": {
+        "name": "Custom landing",
+        "component": "custom",
+        "settings": {}
+      }
+    }
+  }
 }
