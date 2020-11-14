@@ -1,6 +1,6 @@
 # (alpha) Theme: comms/test
 This is an example for how to build a Comms theme. 
-.
+...
 
 ## Create new theme
 The quickest way to create a new theme is to copy this repository and start building things.
