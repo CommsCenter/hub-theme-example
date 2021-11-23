@@ -8,5 +8,5 @@
 </style>
 
 <script> export default {
-    mixins: [pckgList],
+    mixins: [CommsHub.layout],
 }</script>

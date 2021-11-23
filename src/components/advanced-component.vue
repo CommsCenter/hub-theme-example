@@ -13,7 +13,7 @@
 import {isBoolean} from "is-boolean";
 
 export default {
-    mixins: [pckgComponent],
+    mixins: [CommsHub.component],
     methods: {
         isBoolean: function (val) {
             return isBoolean(val);

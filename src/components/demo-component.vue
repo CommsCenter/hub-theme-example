@@ -6,6 +6,6 @@
 </template>
 <script>
 export default {
-    mixins: [pckgComponent]
+    mixins: [CommsHub.component]
 }
 </script>
